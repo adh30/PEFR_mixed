@@ -14,23 +14,24 @@ value = μ + device + occasion
 
 This separates:
 
-Between-subject variation
-Within-subject (measurement) variation
-Device and occasion effects
+* Between-subject variation
+* Within-subject (measurement) variation
+* Device and occasion effects
 
-Two Modelling Approaches are employed
+Two Modelling Approaches are employed:
 
 1️⃣ Homogeneous Residual Variance
 e ~ N(0, σ²)
 
 This assumes that all measurements share the same residual variance.
 LoA = bias ± 1.96 × √(2σ²)
-Pros
+
+### Pros
 * Simple and stable
 * Matches classical Bland–Altman
 * Easy to interpret
 
-Cons
+### Cons
 * Assumes equal precision across devices
 * Cannot detect heteroscedasticity
 
@@ -40,17 +41,17 @@ e ~ N(0, σ²_device)
 In this model each device has its own variance.
 LoA = bias ± 1.96 × √(σ²₁ + σ²₂)
 
-Pros
+### Pros
 * More realistic (matches measurement theory)
 * Identifies differences in device precision
 * Better representation of agreement
 
-Cons
+### Cons
 * More complex
 * Requires more data
 * Less stable in bootstrap
 
-The code provides various agreement and repeatability statistics which are derived from model variance components:
+Whichever model is used, the code provides a range of agreement and repeatability statistics derived from model variance components:
 
 **Device Agreement**
 * Bias
