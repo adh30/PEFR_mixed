@@ -1,6 +1,4 @@
 # Repeated-Measures Agreement Analysis
-
-## Overview
 This project implements a mixed-effects approach to agreement analysis using repeated PEFR measurements from the classic Bland & Altman dataset:
 🔗 https://www-users.york.ac.uk/~mb55/meas/ba.htm
 It evaluates:
