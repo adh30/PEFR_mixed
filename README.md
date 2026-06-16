@@ -1,11 +1,12 @@
 # Repeated-Measures Agreement Analysis
-This project implements a mixed-effects approach to agreement analysis using repeated PEFR measurements from the classic Bland & Altman dataset:
-🔗 https://www-users.york.ac.uk/~mb55/meas/ba.htm
-It evaluates:
+This project uses a mixed-effects approach to evaluated agreement and repeatability using the classic Bland & Altman Peak Flow (PEFR) dataset:
+(see 🔗 https://www-users.york.ac.uk/~mb55/meas/ba.htm)
+
+The method assesses:
 * Device agreement (between methods)
 * Repeatability (within device across occasions)
 
-The approach extends classical Bland–Altman analysis to handle repeated measurements per subject in a single hierarchical mixed model:
+It extends simple Bland–Altman analysis to handle repeated measurements per subject in a single hierarchical mixed model:
 value = μ + device + occasion 
         + subject + (subject × device) + (subject × occasion) 
         + residual
