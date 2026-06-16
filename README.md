@@ -19,9 +19,11 @@ This separates:
 Two Modelling Approaches are employed:
 
 1️⃣ Homogeneous Residual Variance
+
 e ~ N(0, σ²)
 
 This assumes that all measurements share the same residual variance.
+
 LoA = bias ± 1.96 × √(2σ²)
 
 ### Pros
@@ -34,9 +36,11 @@ LoA = bias ± 1.96 × √(2σ²)
 * Cannot detect heteroscedasticity
 
 2️⃣ Heterogeneous Residual Variance (by Device)
+
 e ~ N(0, σ²_device)
 
 In this model each device has its own variance.
+
 LoA = bias ± 1.96 × √(σ²₁ + σ²₂)
 
 ### Pros
@@ -75,7 +79,6 @@ Whichever model is used, the code provides a range of agreement and repeatabilit
 | PEFR suitability        | ⚠ Approximate      | ✅ Better             |
 | LoA calculation         | Simple             | More complex          |
 | Interpretation          | Straightforward    | More nuanced          |
-👉 Therefore:
 
 When to use each approach:
 | Scenario                          | Recommended Model |
@@ -88,6 +91,3 @@ When to use each approach:
 | High-quality inference required  | Heterogeneous    |
 | Comparing device performance     | Heterogeneous    |
 
-## Key Takeaway
-Homogeneous  → simple, robust, approximate  
-Heterogeneous → realistic, detailed, data-dependent 
